@@ -3812,24 +3812,24 @@ static void run_pid_control_speed(float dt, volatile motor_all_state_t *motor) {
 
 	motor->m_iq_set = output * conf_now->lo_current_max;
 	//logpid
-	// if (m_log_pid_speed){
-	// 	m_log_pid_speed_cnt++;
-	// 	if (m_log_pid_speed_cnt >= 10){
-	// 		m_log_pid_speed_cnt = 0;//100Hz
+	if (m_log_pid_speed){
+		m_log_pid_speed_cnt++;
+		if (m_log_pid_speed_cnt >= 10){
+			m_log_pid_speed_cnt = 0;//100Hz
 
-	// 		commands_printf("%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f\n",
-	// 		conf_now->lo_current_max,
-	// 		state_m->id_target,
-	// 		state_m->id,
-	// 		state_m->iq_target,
-	// 		state_m->iq,
-    //      	output,
-	//      	motor->m_speed_pid_set_rpm,
-	// 		rpm,
-	// 		state_m->v_bus
-	// 		);
-	// 	}
-	// }
+			commands_printf("%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f\n",
+			conf_now->lo_current_max,
+			state_m->id_target,
+			state_m->id,
+			state_m->iq_target,
+			state_m->iq,
+         	output,
+	     	motor->m_speed_pid_set_rpm,
+			rpm,
+			state_m->v_bus
+			);
+		}
+	}
     
 }
 
