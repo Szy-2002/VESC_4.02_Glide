@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "comm_can.h": "c",
+        "mc_interface.h": "c",
+        "mcpwm_foc.h": "c",
+        "conf_general.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "ranges": "c",
+        "hal.h": "c",
+        "hal_lld.h": "c",
+        "uart.h": "c",
+        "encoder.h": "c",
+        "commands.h": "c",
+        "datatypes.h": "c"
+    },
+    "trae.tab.enableRename": false,
+    "trae.tab.enableAutoImport": false
+}
